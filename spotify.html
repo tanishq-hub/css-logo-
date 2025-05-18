@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        body{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fff;
+        }
+
+        .main{
+            width: 140px;
+            height: 140px;
+            border-radius: 50px;
+            background-color: black;
+        }
+
+        .circle {
+            margin-top: 11px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            align-items: center;
+            background: radial-gradient(circle at 60% 20%, #1db954, #1ed760, #1db954);
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .line-1{
+            position:absolute;
+            width: 105px;
+            background-color: black;
+            height: 15px;
+           margin-top: 35px;
+           margin-left: 8px;
+            border-radius: 15px;
+        }
+
+        .line-2{
+            position:absolute;
+            width: 85px;
+            background-color: black;
+            height: 15px;
+           margin-top: 55px;
+           margin-left: 18px;
+            border-radius: 10px;
+        }
+
+        .line-3{
+             position:absolute;
+            width: 65px;
+            background-color: black;
+            height: 15px;
+           margin-top: 75px;
+           margin-left: 28px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="circle">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+    </div>
+    </div>
+</body>
+</html>

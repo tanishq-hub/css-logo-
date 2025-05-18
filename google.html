@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+  .google-g {
+    margin-top: 370px;
+    margin-left: 920px;
+        width: 100px;
+      height: 100px;
+      border-radius: 50%;
+   background: conic-gradient(
+  #df3a24  0deg 54deg,
+  transparent 0deg 90deg,
+  #4285F4 90deg 120deg,
+  #34a853 180deg 260deg,
+  #fbbc05 290deg 390deg
+
+);
+        position: relative;
+  }
+
+    .google-g::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 20px;
+      left: 20px;
+      background: white;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .google-g::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 20%;
+      background: #4285F4 ;
+      top: 40%;
+      left: 50%;
+      transform: translateY(-5%);
+      z-index: 3;
+      border-top-right-radius: 1px;
+      border-bottom-right-radius: 10px;
+    }
+ </style>   
+</head>
+<body>
+
+  <div class="google-g">
+  <div class="cut-mask"></div>
+</div>
+
+</body>
+</html>
